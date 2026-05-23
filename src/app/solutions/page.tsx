@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Solutions",
-  description: "Purpose-built workflows for outbound sales, demand generation, recruiting, agencies, founders and RevOps — all on one platform.",
+  description:
+    "Purpose-built workflows for outbound sales, demand generation, recruiting, agencies, founders and RevOps — all on one platform.",
 };
 
 import SolutionsClient from "./client";
