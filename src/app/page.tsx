@@ -14,7 +14,6 @@ import {
   Bell,
 } from "lucide-react";
 import { Section, Eyebrow, GradientText } from "@/components/site/Section";
-
 export default function HomePage() {
   return (
     <div>

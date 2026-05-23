@@ -11,7 +11,7 @@ const nav = [
   { to: "/solutions", label: "Solutions" },
   { to: "/integrations", label: "Integrations" },
   { to: "/pricing", label: "Pricing" },
-  { to: "/about", label: "Company" },
+  { to: "/about", label: "About" },
 ];
 
 export function Header() {

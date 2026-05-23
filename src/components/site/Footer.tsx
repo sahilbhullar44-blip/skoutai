@@ -7,24 +7,10 @@ const cols = [
     title: "Product",
     links: [
       { to: "/features", label: "Features" },
+      { to: "/solutions", label: "Solutions" },
       { to: "/integrations", label: "Integrations" },
       { to: "/pricing", label: "Pricing" },
-    ],
-  },
-  {
-    title: "Solutions",
-    links: [
-      { to: "/solutions", label: "Sales teams" },
-      { to: "/solutions", label: "Recruiters" },
-      { to: "/solutions", label: "Agencies" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
       { to: "/about", label: "About" },
-      { to: "/contact", label: "Contact" },
-      { to: "/about", label: "Careers" },
     ],
   },
 ];
