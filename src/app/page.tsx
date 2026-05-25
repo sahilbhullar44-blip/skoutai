@@ -31,7 +31,7 @@ export default function HomePage() {
             </div>
             <div className="md:col-span-4">
               <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                Skout AI is the unified data layer for modern revenue teams — 600M verified
+                Skout AI is the unified data layer for modern revenue teams — 200M verified
                 contacts, real-time enrichment, intent signals and multi-channel outreach in one
                 place.
               </p>
@@ -55,7 +55,7 @@ export default function HomePage() {
           {/* Stat strip */}
           <div className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4">
             {[
-              { k: "600M+", v: "Verified contacts" },
+              { k: "200M+", v: "Verified contacts" },
               { k: "45M+", v: "Companies tracked" },
               { k: "98.5%", v: "Email accuracy" },
               { k: "<400ms", v: "Avg enrichment" },
@@ -94,7 +94,7 @@ export default function HomePage() {
                 <Database className="h-3.5 w-3.5" /> Prospect Graph
               </div>
               <h3 className="font-display mt-4 text-xl leading-tight sm:text-2xl">
-                600M people. <span className="italic-serif">40+ filters.</span> One search bar.
+                200M people. <span className="italic-serif">40+ filters.</span> One search bar.
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Firmographics, technographics, hiring signals and intent — combined into one

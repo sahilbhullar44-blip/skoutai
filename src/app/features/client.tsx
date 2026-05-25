@@ -57,7 +57,7 @@ const groups = [
       {
         icon: Users,
         title: "Employee search",
-        description: "Surface decision-makers across 600M profiles with 40+ persona filters.",
+        description: "Surface decision-makers across 200M profiles with 40+ persona filters.",
       },
       {
         icon: Mail,

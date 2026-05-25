@@ -59,7 +59,7 @@ const tiers = [
 ];
 
 const compare = [
-  ["Contacts in database", "600M", "600M", "600M", "600M"],
+  ["Contacts in database", "200M", "200M", "200M", "200M"],
   ["Waterfall enrichment", "—", "✓", "✓", "✓"],
   ["Multi-channel sequences", "—", "✓", "✓", "✓"],
   ["Intent signals", "—", "50 topics", "Unlimited", "Unlimited"],

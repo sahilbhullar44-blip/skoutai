@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Skout AI",
   },
   description:
-    "Find, verify, and reach your next customer with the all-in-one B2B data, enrichment, intent signals and outreach platform. 600M+ verified contacts.",
+    "Find, verify, and reach your next customer with the all-in-one B2B data, enrichment, intent signals and outreach platform. 200M+ verified contacts.",
   keywords: [
     "B2B data",
     "lead intelligence",

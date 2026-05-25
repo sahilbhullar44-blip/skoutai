@@ -44,7 +44,7 @@ export function autoReplyTemplate(name: string): string {
                     <div style="background:#fafafa;border:1px solid #e4e4e7;border-radius:12px;padding:20px;">
                       <div style="font-size:22px;margin-bottom:10px;">🔍</div>
                       <p style="margin:0 0 6px;color:#18181b;font-size:14px;font-weight:600;">Lead Intelligence</p>
-                      <p style="margin:0;color:#71717a;font-size:13px;line-height:1.5;">600M+ verified contacts with 40+ filters.</p>
+                      <p style="margin:0;color:#71717a;font-size:13px;line-height:1.5;">200M+ verified contacts with 40+ filters.</p>
                     </div>
                   </td>
                   <td style="padding:0 0 16px 8px;width:50%;vertical-align:top;">
