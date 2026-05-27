@@ -32,7 +32,7 @@ async function submitContact(data: ContactFormData) {
 const contactCards = [
   { icon: Mail, title: "Email", description: "hello@skoutai.io" },
   { icon: MessageSquare, title: "Live chat", description: "Mon – Fri · 9am – 7pm CET" },
-  { icon: MapPin, title: "HQ", description: "Berlin · Remote-first globally" },
+  { icon: MapPin, title: "HQ", description: "Remote-first globally" },
 ];
 
 const perks = [

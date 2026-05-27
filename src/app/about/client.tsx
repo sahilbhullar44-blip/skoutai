@@ -23,7 +23,7 @@ const team = [
   { name: "Ava Larsen", role: "Co-founder & CEO", location: "Oslo" },
   { name: "Mateo Rivera", role: "Co-founder & CTO", location: "Lisbon" },
   { name: "Priya Shah", role: "Head of Product", location: "Bangalore" },
-  { name: "Jonas Weber", role: "Head of Data", location: "Berlin" },
+  { name: "Jonas Weber", role: "Head of Data", location: "London" },
   { name: "Mira Tanaka", role: "Design Director", location: "Tokyo" },
   { name: "Léa Dupont", role: "Head of GTM", location: "Paris" },
 ];
