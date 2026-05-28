@@ -32,6 +32,7 @@ async function submitContact(data: ContactFormData) {
 }
 
 export default function ContactClient() {
+  const calLink = process.env.NEXT_PUBLIC_CAL_LINK || "rick";
   const [activeTab, setActiveTab] = useState<"calendar" | "form">("calendar");
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
@@ -163,7 +164,7 @@ export default function ContactClient() {
               {activeTab === "calendar" ? (
                 <div className="calendar-embed-container">
                   <iframe
-                    src="https://cal.com/kevin-jaspal/demo-25?embed=true&theme=dark"
+                    src={`https://cal.com/${calLink}?embed=true&theme=dark`}
                     style={{ width: "100%", height: "100%", minHeight: "650px", border: "0" }}
                     allow="camera; microphone; autoplay; clipboard-write"
                     title="Cal.com scheduling calendar"
@@ -173,12 +174,12 @@ export default function ContactClient() {
                       If the calendar widget does not load, you can also book directly at:
                     </p>
                     <a
-                      href="https://cal.com/kevin-jaspal/demo-25"
+                      href={`https://cal.com/${calLink}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
                     >
-                      cal.com/kevin-jaspal/demo-25 <ArrowUpRight className="h-3 w-3" />
+                      cal.com/{calLink} <ArrowUpRight className="h-3 w-3" />
                     </a>
                   </div>
                 </div>
