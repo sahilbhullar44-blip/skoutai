@@ -163,7 +163,7 @@ export default function ContactClient() {
               {activeTab === "calendar" ? (
                 <div className="calendar-embed-container">
                   <iframe
-                    src="https://cal.com/skoutai/demo?embed=true&theme=dark"
+                    src="https://cal.com/kevin-jaspal/demo-25?embed=true&theme=dark"
                     style={{ width: "100%", height: "100%", minHeight: "650px", border: "0" }}
                     allow="camera; microphone; autoplay; clipboard-write"
                     title="Cal.com scheduling calendar"
@@ -173,12 +173,12 @@ export default function ContactClient() {
                       If the calendar widget does not load, you can also book directly at:
                     </p>
                     <a
-                      href="https://cal.com"
+                      href="https://cal.com/kevin-jaspal/demo-25"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
                     >
-                      cal.com/skoutai/demo <ArrowUpRight className="h-3 w-3" />
+                      cal.com/kevin-jaspal/demo-25 <ArrowUpRight className="h-3 w-3" />
                     </a>
                   </div>
                 </div>
