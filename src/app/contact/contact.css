@@ -1,0 +1,460 @@
+/* Contact Page Redesign - Skout AI Theme Colors */
+
+:root {
+  --contact-deep-indigo: #0b0918;
+  --contact-accent-purple: #8b5cf6;
+  --contact-accent-blue: #6366f1;
+  --contact-light-lavender: #f1f0fb;
+  --contact-lavender-text: #4338ca;
+}
+
+/* Banner Section */
+.contact-banner {
+  background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 45%),
+              radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.12), transparent 45%),
+              var(--contact-deep-indigo);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-banner-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .contact-banner-content {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.contact-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-banner-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-banner-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .contact-banner-title {
+    font-size: 3rem;
+  }
+}
+
+.contact-banner-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--contact-accent-blue), var(--contact-accent-purple));
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  width: fit-content;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-banner-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* Graphic Cards Container (Right side of banner) */
+.contact-banner-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .contact-banner-right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-banner-right {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Verified Leads Card */
+.graphic-card-team {
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-elegant);
+  flex: 1;
+}
+
+.graphic-card-team-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.graphic-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.graphic-team-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.625rem;
+}
+
+.graphic-team-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.graphic-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--contact-accent-blue), var(--contact-accent-purple));
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.graphic-member-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.graphic-member-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.graphic-member-role {
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+}
+
+.graphic-member-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #10b981; /* Green status */
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.15rem 0.4rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.graphic-status-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #10b981;
+  border-radius: 50%;
+}
+
+/* Enrich Lead Card */
+.graphic-card-enrich {
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-elegant);
+  width: 100%;
+  max-width: 280px;
+  align-self: center;
+}
+
+.graphic-card-enrich-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+}
+
+.graphic-enrich-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.graphic-enrich-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+
+.graphic-enrich-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  background: var(--background);
+}
+
+.graphic-enrich-amount {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--background);
+}
+
+.graphic-enrich-submit {
+  background: linear-gradient(135deg, var(--contact-accent-blue), var(--contact-accent-purple));
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+/* Two-column Content Section (Image 2 style) */
+.contact-interactive-sec {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-interactive-sec {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+}
+
+.contact-options-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Interactive Card Options */
+.contact-option-card {
+  border-radius: 20px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.contact-option-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Dark Card (Calendar option) */
+.contact-option-card.card-dark {
+  background: var(--contact-deep-indigo);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-option-card.card-dark.active {
+  border-color: var(--contact-accent-blue);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+.contact-option-card.card-dark .card-icon-wrapper {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.contact-option-card.card-dark .card-btn {
+  background: #ffffff;
+  color: var(--contact-deep-indigo);
+}
+
+.contact-option-card.card-dark .card-btn:hover {
+  background: #f4f4f5;
+}
+
+/* Light Card (Mail/Form option) */
+.contact-option-card.card-light {
+  background: var(--contact-light-lavender);
+  color: var(--contact-deep-indigo);
+  border-color: rgba(99, 102, 241, 0.05);
+}
+
+.contact-option-card.card-light.active {
+  border-color: var(--contact-accent-purple);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.contact-option-card.card-light .card-icon-wrapper {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--contact-lavender-text);
+}
+
+.contact-option-card.card-light .card-btn {
+  background: var(--contact-deep-indigo);
+  color: #ffffff;
+}
+
+.contact-option-card.card-light .card-btn:hover {
+  background: #1e1b4b;
+}
+
+/* Card Inner Components */
+.card-icon-wrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.card-desc-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.card-btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  width: fit-content;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+/* Right Interactive Display Panel */
+.contact-display-panel {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: var(--shadow-elegant);
+  overflow: hidden;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 1.25rem 1.5rem;
+  border-b: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--muted);
+}
+
+.panel-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.panel-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  background: var(--background);
+  border: 1px solid var(--border);
+}
+
+.panel-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Custom form additions for this layout */
+.panel-form-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.panel-form-desc {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+/* Cal.com embed custom styling */
+.calendar-embed-container {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-height: 600px;
+}
+
+.calendar-fallback {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
